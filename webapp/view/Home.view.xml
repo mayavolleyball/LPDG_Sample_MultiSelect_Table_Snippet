@@ -1,0 +1,12 @@
+<mvc:View controllerName="project1.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" titleAlignment="Center">
+        <content>
+        <!--  -->
+         <VBox id="homeVBoxId" class="sapUiTinyMarginTop" alignItems="Center" justifyContent="Center">
+        <Button id="screenOneId" type="Emphasized" text="{i18n>tablesnippet}" press="onPressNavigationTableSnippet" class="sapUiSmallMarginTop"/>
+        </VBox>
+        </content>
+    </Page>
+</mvc:View>

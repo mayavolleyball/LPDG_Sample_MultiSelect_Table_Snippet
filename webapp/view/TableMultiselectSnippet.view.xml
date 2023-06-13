@@ -1,0 +1,56 @@
+<mvc:View controllerName="project1.controller.TableMultiselectSnippet"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}" titleAlignment="Center" showNavButton="true" navButtonPress="onBack">
+        <content>
+        <Table	id="table" mode="MultiSelect" items="{/SH01Set}" sticky="HeaderToolbar,InfoToolbar,ColumnHeaders">
+		<headerToolbar>
+			<Toolbar id="toolBarId">
+				<Title id="titleId" text="Table Snippet" level="H2"/>
+				<ToolbarSpacer id="toolBarSpacerId"/>
+				<!-- <CheckBox id="checkBoxId1" text="Strict Layout" select="onCheckBoxSelect"/> -->
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="col1">
+                <Text id="input1" text="TPLNR"/>
+			</Column>
+			<Column id="col2">
+                <Text id="input2" text="Name"/>
+			</Column>
+            <Column id="col6">
+                <Text id="input6" text="House Number"/>
+			</Column>
+            <Column id="col5">
+                <Text id="input5" text="Street"/>
+			</Column>
+             <Column id="col3">
+                <Text id="input3" text="City"/>
+			</Column>
+            <Column id="col4">
+                <Text id="input4" text="Post Code"/>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem id="colList1" vAlign="Middle">
+				<cells>
+					<ObjectIdentifier id="text1" text="{tplnr}"/>
+					<Text id="text2" text="{name1}" />
+                    <Text id="text6" text="{houseNum1}" />
+                    <Text id="text5" text="{street}" />
+                    <Text id="text3" text="{city1}" />
+                    <Text id="text4" text="{postCode1}" />
+
+                     
+
+                    
+                    
+					<!-- <Text id="text1" text="@usefulunit" wrapping="false" />
+					<Text id="text2" text="@Devices" wrapping="false"/> -->
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+        </content>
+    </Page>
+</mvc:View>
